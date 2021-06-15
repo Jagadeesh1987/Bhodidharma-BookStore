@@ -1,0 +1,37 @@
+<div *ngIf="!showAddBook" class="book-container">
+    <div *ngIf="isAdmin" class="col-md-12 btn-div">
+        <button class="add-btn" type="button" (click)="addBook()"> Add New Book </button>
+    </div>
+    <div class="container">
+      <div class="item" *ngIf="initialData.length === 0">
+        No Books Available
+      </div>
+      <div class="item" *ngFor="let list of initialData">
+        <div class="actionDiv" *ngIf="isAdmin">
+          <img class="pointer" (click)="editBook(list)" src="assets/images/Edit.png"/>
+          <img class="pointer" (click)="deleteBook(list.id)" src="assets/images/Delete_Icon.png"/>
+        </div>
+        <div class="bookItem">
+          <img class="bookImage" [src]="list.thumbnailImg ? list.thumbnailImg : 'assets/images/notavailable.gif'"/>
+          <div class="bookDetails">
+            <label class="bookName"> {{ list.bookName }} </label>
+           <div class="detailsDiv">
+            <label class="otherBookDetails"> Author: </label> 
+            <label class="otherBookDetailsColor"> {{ list.authorName }} </label>
+           </div> 
+           <div class="detailsDiv">
+            <label class="otherBookDetails"> bookCategory: </label> 
+            <label class="otherBookDetailsColor"> {{ list.bookCategory }} </label>
+           </div>
+           <div class="detailsDiv">
+            <label class="otherBookDetails"> edition: </label> 
+            <label class="otherBookDetailsColor"> {{ list.edition }}</label>
+           </div>
+           <div class="detailsDiv">
+            <label class="otherBookDetails"> Price: </label> 
+            <label class="otherBookDetailsColor"> {{ list.price }}</label>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>

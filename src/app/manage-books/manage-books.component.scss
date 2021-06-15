@@ -1,0 +1,113 @@
+.book-container {
+  justify-content: center;
+}
+
+.btn-div{
+  margin: 10px 0 0 10px;
+  top: 84px;
+  position: fixed;
+}
+
+.add-btn {
+   background: #A0c1A0;
+   color: #ffffff; 
+   height: 40px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 160px;
+  left: 6%;
+  height: calc(100vh - 200px);
+  overflow-y: scroll;
+  padding-top: 15px;
+
+}
+
+.bookImage {
+  display: block;
+  width: 174px;
+  max-height: 150px;
+  margin: auto;
+  padding: 12px;
+}
+
+.item {
+  flex: 0 22%;
+  height: 430px;
+  margin-bottom: 24px;
+}
+
+.bookItem {
+  height: 240px;
+  background: #ffffff;
+  border-radius: 0 11px;
+}
+
+.bookDetails {
+  background: #f3f3f3;
+  height: 240px;
+  padding: 6px;
+  border-radius: 14px 0;
+}
+
+
+
+::-webkit-scrollbar {
+	/* width: 5px; */
+	height: 3px !important;
+	width: 3px !important;
+  }
+
+  
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.05);
+	border-radius: 10px;
+	background: #e9ecef;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: #adb5bd;
+  }
+
+  .bookName {
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    min-width: 224px;
+  }
+
+  .otherBookDetails {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .otherBookDetailsColor {
+    font-size: 15px;
+    color: #46e433;
+    margin-left: 8px;
+  }
+
+  .detailsDiv {
+    display: flex;
+    justify-content: end;
+    padding-left: 10px;
+  }
+
+  .actionDiv {
+    background: #A0c1A0;
+    height: 40px;
+    width: 80px;
+    border-radius: 5px 5px 0 0;
+    display: flow-root;
+    padding: 7px;
+  }
+
+  .pointer {
+    cursor: pointer;
+  }

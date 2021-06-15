@@ -1,0 +1,28 @@
+.headerDiv {
+    text-align: center;
+    background: #A0c1A0;
+    height: 74px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding-top: 12px;
+    
+  }
+  
+  .headerStyle {
+    color: #ffffff;
+    font-size: 34px;
+    text-shadow: 5px 5px 5px #333;
+    font-family: ui-rounded;
+  }
+
+  .logoutDiv {
+    float: right;
+    padding: 10px;
+  }
+
+  .logoutImg {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+  }

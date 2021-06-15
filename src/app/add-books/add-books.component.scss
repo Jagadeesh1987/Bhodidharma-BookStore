@@ -1,0 +1,50 @@
+.container {
+    width: 60%;
+    margin: auto;
+    background: #f3f3f3;
+    text-align: center;
+    margin-top: 140px;
+    padding: 0;
+}
+
+.subHeader {
+    height: 40px;
+    background: #A0c1A0;
+    color: #ffffff;
+}
+
+.submit-btn {
+    background: #A0c1A0;
+    color: #ffffff; 
+    height: 40px;
+ }
+
+ .cancel-btn {
+    background: #ffffff;
+    border: 1px solid #A0c1A0;
+    color: #A0c1A0;
+    height: 40px;
+    width: 80px;
+    margin: 10px 0 0 10px; 
+ }
+
+ .spanStyle {
+    min-width: 120px;
+    margin-top: 8px;
+ }
+ 
+ .formDiv {
+     height: 360px;
+     margin-top: 32px;
+ }
+
+ .form-group {
+    display: flex;
+    justify-content: center;
+    height: 35px;
+    margin-top: 16px;
+ }
+ 
+ .form-control {
+     width: 60%;
+ }

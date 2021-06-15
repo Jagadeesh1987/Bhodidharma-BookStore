@@ -1,0 +1,9 @@
+<app-header></app-header>
+<app-add-books *ngIf="showAddBook" (cancelClicked)="oncancelClicked($event)" 
+(emitNewBookAdded)="addNewBook($event)" [editBookData]="editBookData" (isEditData)="updateBookData($event)"
+ ></app-add-books>
+
+ <app-manage-books *ngIf="!showAddBook" [initialData]="initialData" 
+ (addBtnClicked)="addbuttonClicked($event)"
+ (editBtnClicked)="populateEditdata($event)"
+ (deleteBtnClicked)="deleteBook($event)" [isAdmin]="isAdmin"></app-manage-books>
