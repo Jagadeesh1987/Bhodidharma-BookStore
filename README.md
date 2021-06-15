@@ -1,6 +1,25 @@
-# AngularPractice
+# Bodhidharma Book Store App
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
+
+## Developer Comments and Notes
+This project is  developed by Jagadeesh
+This project has 3 Components, Namely
+1. Login Components
+  a. App has two users
+  b. admin - Username: admin Password: admin123
+  c. User - Username: user Password: user123
+  
+2. Book Section . I have created two child components, naamely 
+   a. Manage Books - Where this page had add, edit and delete actions and these actions can be performed only by admin. Non Admin users can only view the list.
+   b. Add Book - This page can be accessed only by admin. The admin user can add books to the list.
+ 
+3. Header Component
+
+## Key points 
+>> Data is shared between the components using @Input and  @Output events.
+>> on Load the Initial Book items are emitted from parent Component => Book Section
+
 
 ## Development server
 
