@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class BookSectionComponent implements OnInit {
   showAddBook: boolean;
-  editBookData: [];
+  editBookData: [] = [];
   isAdmin: boolean;
 
   
@@ -59,28 +59,22 @@ export class BookSectionComponent implements OnInit {
   }];
 
   constructor(private router: Router) { 
-    if(this.router.getCurrentNavigation().extras.state){    
-      this.isAdmin = this.router.getCurrentNavigation().extras.state.isCurrentUserAdmin;
-    } else {
      this.isAdmin = localStorage.getItem('isAdmin') === 'true' ? true : false;
-    }
-    
-
-    this.showAddBook = false;
+     this.showAddBook = false;
   }
 
   ngOnInit(): void {
   }
 
-  addbuttonClicked(e){
+  addbuttonClicked(e:any){
     this.showAddBook = true;
   }
 
-  oncancelClicked(e){
+  oncancelClicked(e:any){
     this.showAddBook = false;
   }
 
-  addNewBook(e){
+  addNewBook(e:any){
     let obj = {
       ...e,
       id: this.initialData.length + 1
@@ -89,12 +83,12 @@ export class BookSectionComponent implements OnInit {
     this.showAddBook = false;
   }
 
-  populateEditdata(e){
+  populateEditdata(e:any){
     this.editBookData = e;
     this.showAddBook = true;     
   }
 
-  updateBookData(e){
+  updateBookData(e:any){
     const bookIndex = this.initialData.findIndex((obj => obj.id == e.id));
     let currEle = this.initialData[bookIndex];
     currEle.bookName = e.bookName;
@@ -105,7 +99,7 @@ export class BookSectionComponent implements OnInit {
     this.showAddBook = false;
   }
 
-  deleteBook(e){
+  deleteBook(e:any){
     let filteredList = this.initialData.filter((ele) => {
          return ele.id !== e
     });

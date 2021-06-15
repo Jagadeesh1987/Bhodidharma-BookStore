@@ -9,15 +9,14 @@ export class ManageBooksComponent implements OnInit {
   @Output() addBtnClicked = new EventEmitter<Boolean>();
   @Output() editBtnClicked = new EventEmitter<Object>();
   @Output() deleteBtnClicked = new EventEmitter<number>();
-  @Input() initialData;
-  @Input() isAdmin;
-  showAddBook: boolean;
-  searchText: string;
+  @Input() initialData: any;
+  @Input() isAdmin: boolean = false;
+  showAddBook: boolean = false;
   constructor() {}
 
    addBook(){
       this.addBtnClicked.emit(true); 
-      this.editBtnClicked.emit(null);  
+      this.editBtnClicked.emit(undefined);  
    }
 
   ngOnInit(): void {

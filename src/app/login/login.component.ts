@@ -11,12 +11,13 @@ declare var $: any;
 export class LoginComponent implements OnInit {
   loginForm: FormGroup;
   submitted = false;
-  isCurrentUserAdmin: boolean;
+  isCurrentUserAdmin: boolean = false;
   constructor(
     private router: Router,
     private formBuilder: FormBuilder){
      }
-    handleSubmit(e) {
+    handleSubmit(e: any) {
+      this.isCurrentUserAdmin = false;
       if (e.charCode === 13) {
         $('.login-button').click();
       }

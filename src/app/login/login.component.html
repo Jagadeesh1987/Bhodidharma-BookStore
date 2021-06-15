@@ -7,14 +7,14 @@
         <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
           <div>
             <div class="form-group">
-              <label for="username" class="hide">{{userNameText}}</label>
-              <input type="text" class="form-control text-input" formControlName="userName" class="form-control"
+              <label for="username" class="hide">User Name</label>
+              <input type="text" class="form-control text-input" placeholder="Enter Username" formControlName="userName" class="form-control"
                 autocomplete="off" required 
                 [ngClass]="{ 'is-invalid': submitted && f.userName.errors }"/>
             </div>
             <div class="form-group">
-              <label for="password" class="hide">{{passwordText}}</label>
-              <input type="password" class="form-control text-input" formControlName="password" class="form-control"
+              <label for="password" class="hide">Password</label>
+              <input type="password" class="form-control text-input" placeholder="Enter password" formControlName="password" class="form-control"
                maxlength="16" required  [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
             </div>
             <div class="form-group">

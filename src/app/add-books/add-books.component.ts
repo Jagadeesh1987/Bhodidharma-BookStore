@@ -11,8 +11,8 @@ export class AddBooksComponent implements OnInit {
   @Output() cancelClicked = new EventEmitter<boolean>();
   @Output() emitNewBookAdded = new EventEmitter<any>();
   @Output() isEditData = new EventEmitter<any>();
-  @Input() editBookData;
-  editBookId;
+  @Input() editBookData: any;
+  editBookId: number = 0;
   newBookForm: FormGroup;
   submitted = false;
 
