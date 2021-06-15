@@ -5,10 +5,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Developer Comments and Notes
 This project is  developed by Jagadeesh
 This project has 3 Components, Namely
-1. Login Components
-  a. App has two users
-  b. admin - Username: admin Password: admin123
-  c. User - Username: user Password: user123
+1. Login Components. App has two users  
+  a. admin - Username: admin Password: admin123
+  b. User - Username: user Password: user123
   
 2. Book Section . I have created two child components, naamely 
    a. Manage Books - Where this page had add, edit and delete actions and these actions can be performed only by admin. Non Admin users can only view the list.
@@ -25,6 +24,9 @@ This project has 3 Components, Namely
     a. When user clicks Add, Control is passed to parent and inturn passed to Add Book Component. Used Reactive forms for form validation.
 	b. When user Clicks Edit, selected Book object is passed to parent and inturn the data is populated in Add Book Component.
 	c. When user Clicks Delete, selected Id is filtered from the list and displayed.
+	
+## Heroku App
+Tried to deploy the app using heroku app. Unfortunately there is some issue in my account.
 
 
 ## Development server
