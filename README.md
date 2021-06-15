@@ -17,8 +17,14 @@ This project has 3 Components, Namely
 3. Header Component
 
 ## Key points 
->> Data is shared between the components using @Input and  @Output events.
->> on Load the Initial Book items are emitted from parent Component => Book Section
+
+1.  Data is shared between the components using @Input and  @Output events.
+2.  OnLoad the Initial Book items are emitted from parent Component => Book Section
+3.  Initial list is displayed in Manage Books child component.
+4.  All actions like Add, Edit and Delete is emitted from child element
+    a. When user clicks Add, Control is passed to parent and inturn passed to Add Book Component. Used Reactive forms for form validation.
+	b. When user Clicks Edit, selected Book object is passed to parent and inturn the data is populated in Add Book Component.
+	c. When user Clicks Delete, selected Id is filtered from the list and displayed.
 
 
 ## Development server
